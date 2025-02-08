@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de [Kauan.dev] - Projetos, Contato e muito mais">
+    <meta name="keywords" content="portfólio, design, front-end, back-end">
+    <meta name="author" content="Kauan">
+    <title>Portfólio de Kauan</title>
+</head>
+<body>
+    <header>
+        <h1>Kauan.dev</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Eu sou Kauan, e trabalho com desenvolvimento de web sistemas (sites)</p>
+    </section>
+
+    <section id="projetos">
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-container">
+                <div class="projeto">
+                    <img src="assets/img/projeto1.jpg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver Projeto</a>
+                </div>
+        
+                <div class="projeto">
+                    <img src="assets/img/projeto2.jpg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver Projeto</a>
+                </div>
+        
+                <div class="projeto">
+                    <img src="assets/img/projeto3.jpg" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <a href="#" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="contato">
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Quer conversar sobre um projeto ou parceria? Me envie uma mensagem!</p>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+        
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem..."></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </section>
+
+    <script src="js/script.js"></script>
+    <footer>
+        <p>&copy; 2025 Kauan.dev / Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        // Verifica a visibilidade das seções e aplica a animação
+        function handleScroll() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    section.classList.add('is-visible');
+                } else {
+                    section.classList.remove('is-visible');
+                }
+            });
+        }
+    
+        // Adiciona o listener de scroll
+        window.addEventListener('scroll', handleScroll);
+    
+        // Chama a função para verificar se as seções estão visíveis ao carregar a página
+        handleScroll();
+    </script>
+    
+</body>
+</html>
