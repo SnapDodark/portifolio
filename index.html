@@ -1,110 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Kauan - Projetos, Contato e muito mais">
-    <meta name="keywords" content="portfólio, design, front-end, back-end">
-    <meta name="author" content="Kauan">
-    <title>Portfólio de Kauan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Kauan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link para o CSS do AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Script do AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 </head>
-    <!-- Seu conteúdo aqui -->
 <body>
     <header>
-        <h1>Kauan.dev</h1>
+        <div class="logo">Kauan dev</div>
         <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contact</a></li>
             </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Eu sou Kauan, e trabalho com desenvolvimento de web sistemas (sites)</p>
+    
+      
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm Kauan!</h2>
+            <p>I'm a web developer and I create amazing websites..</p>
+            <!-- Botão de WhatsApp na seção Hero -->
+            <a href="https://wa.me/5534999420299" target="_blank" class="whatsapp-btn">
+                <button>Contact me</button>
+            </a>
+        </div>
     </section>
 
-    <section id="projetos">
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div class="projetos-container">
-                <div class="projeto">
-                    <img src="projeto1.jpg" alt="Projeto 1">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" target="_blank">Ver Projeto</a>
-                </div>
-        
-                <div class="projeto">
-                    <img src="assets/img/projeto2.jpg" alt="Projeto 2">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" target="_blank">Ver Projeto</a>
-                </div>
-        
-                <div class="projeto">
-                    <img src="assets/img/projeto3.jpg" alt="Projeto 3">
-                    <h3>Projeto 3</h3>
-                    <p>Descrição breve do projeto.</p>
-                    <a href="#" target="_blank">Ver Projeto</a>
-                </div>
+    <section id="sobre">
+        <h2>About me</h2>
+        <p>With experience in technologies like HTML, CSS, JavaScript, and modern frameworks, I’m always looking for new solutions and trends to deliver innovative, high-quality projects. If you need a website that stands out and drives results, I’m here to turn your ideas into reality.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="imagem-projeto1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <a href="https://www.lighthouseclothing.co.uk/" target="_blank">Ver projeto</a>
             </div>
-        </section>
-        
+            <div class="portfolio-item">
+                <img src="imagem-projeto2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <a href="https://www.torrid.com/on/demandware.store/Sites-torrid-Site?srsltid=AfmBOor8awg6chJfcjg1IlN7nom1GwWcbHG61LV0uUIdBNAeDnOBTsxe" target="_blank">Ver projeto</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="imagem-project 3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <a href="link-do-projeto-3" target="_blank">Ver projeto</a>
+            </div>
+        </div>
+    </section>
+    
+</section>
+
+            </div>
+        </div>
     </section>
 
     <section id="contato">
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Quer conversar sobre um projeto ou parceria? Me envie uma mensagem!</p>
-            <form action="#" method="POST">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Seu nome">
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
-        
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Sua mensagem..."></textarea>
-        
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-        
+        <h2>Contact</h2>
+        <p>Contact me on WhatsApp by clicking the button below.</p>
+        <!-- Botão de WhatsApp na seção de Contato -->
+        <a href="https://wa.me/5534999420299" target="_blank" class="whatsapp-btn">
+            <button>Contact me</button>
+        </a>
     </section>
 
-    <script src="js/script.js"></script>
-    <footer>
-        <p>&copy; 2025 Kauan.dev / Todos os direitos reservados.</p>
-        <div class="redes-sociais">
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Instagram</a>
-        </div>
-    </footer>
-    <script>
-        // Verifica a visibilidade das seções e aplica a animação
-        function handleScroll() {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                    section.classList.add('is-visible');
-                } else {
-                    section.classList.remove('is-visible');
-                }
-            });
-        }
     
-        // Adiciona o listener de scroll
-        window.addEventListener('scroll', handleScroll);
-    
-        // Chama a função para verificar se as seções estão visíveis ao carregar a página
-        handleScroll();
-    </script>
-    
+
+    <script src="script.js"></script> <!-- Certifique-se de que o arquivo JS está no local correto -->
+     
 </body>
 </html>
